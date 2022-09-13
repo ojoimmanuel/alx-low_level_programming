@@ -52,7 +52,10 @@ void print_to_98(int n)
 	{
 		while (n > 97)
 		{
-			_putchar((n / 100) % 10 + '0');
+			if ((n / 100) % 10 != 0)
+			{
+				_putchar((n / 100) % 10 + '0');
+			}
 			_putchar((n / 10) % 10 + '0');
 			_putchar(n % 10 + '0');
 			if (n > 98)
