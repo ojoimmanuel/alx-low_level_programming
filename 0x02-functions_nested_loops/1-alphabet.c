@@ -1,7 +1,9 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
  * main - prints alphabets
+ *
+ *Description:function to print alphabet
  *
  * Return: 0 (Success)
  */
@@ -15,4 +17,5 @@ void print_alphabet(void)
 		_putchar(alphabet);
 		alphabet++;
 	}
+	_putchar('\n');
 }
