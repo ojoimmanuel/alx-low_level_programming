@@ -1,17 +1,20 @@
 #include <stdio.h>
-#include 'main.h'
-/*
-void _putchar(char *ch)
-{
-    while(*ch)
-    {
-        putchar(*ch);
-        ch++;
-    }
-} */
+#include "main.h"
+/**
+ * main - prints _putchar
+ *
+ * Return: 0 (Success)
+ */
 
-int main()
+int main(void)
 {
-	_putchar("_putchar\n");
-        return 0;
+	char text[9] = "_putchar";
+	int i = 0;
+
+	for (i=0; i<9; i++)
+	{
+		_putchar(text[i]);
+	}
+	_putchar('\n');
+        return (0);
 }
