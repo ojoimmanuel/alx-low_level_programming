@@ -12,12 +12,12 @@ void jack_bauer(void)
 	int n = 0;
 	while (n< 2400)
 	{
-		putchar(n/1000 + '0');
-		putchar(n/100 + '0');
-		putchar(':');
-		putchar(n/10 + '0');
-		putchar(n%10 + '0');
-		putchar('\n');
+		_putchar(n/1000 + '0');
+		_putchar(n/100 + '0');
+		_putchar(':');
+		_putchar(n/10 + '0');
+		_putchar(n%10 + '0');
+		_putchar('\n');
 		n++;
 	}
 	return (0);
