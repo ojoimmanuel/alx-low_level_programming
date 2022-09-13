@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - prints alphabets
+ * print_alphabet - prints alphabets
  *
- *Description:function to print alphabet
+ * Description - print_alphabet function is to print alphabet,
+ * from a to z. char can be incremented.
  *
  * Return: 0 (Success)
  */
