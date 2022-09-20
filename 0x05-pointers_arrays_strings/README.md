@@ -8,3 +8,11 @@ Prototype: void reset_to_98(int *n);
 
 
 
+
+File: 1-swap.c
+
+Write a function that swaps the values of two integers.
+
+
+
+Prototype: void swap_int(int *a, int *b);
