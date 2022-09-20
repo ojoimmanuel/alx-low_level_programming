@@ -23,6 +23,6 @@ void print_array(int *a, int n)
 			i++;
 			count++;
 		}
-		printf("%d", a[i]);
+		printf("%d \n", a[i]);
 	}
 }
