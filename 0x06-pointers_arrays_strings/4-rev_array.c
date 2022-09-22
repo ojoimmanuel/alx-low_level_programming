@@ -20,9 +20,9 @@ void reverse_array(int *a, int n)
 	mid = len / 2;
 	for (i = 0; i < mid; i++)
 	{
-		part1 = a[n - i];
-		part2 = a[i];
-		a[i] = part1;
-		a[n - i] = part2;
+		part1 = a[i];
+		part2 = a[n - 1 - i];
+		a[i] = part2;
+		a[n - 1 - i] = part1;
 	}
 }
