@@ -4,7 +4,7 @@
 /**
  * reverse_array - reverse array
  * @a: pointer
- * @b: secod pointer
+ * @n: secod pointer
  *
  * Return: void
  */
