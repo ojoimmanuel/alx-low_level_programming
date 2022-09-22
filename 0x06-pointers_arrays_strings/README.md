@@ -48,4 +48,15 @@ Your function should work exactly like strcmp
 
 
 
+File: 4-rev_array.c
+
+Write a function that reverses the content of an array of integers.
+
+Prototype: void reverse_array(int *a, int n);
+
+Where n is the number of elements of the array
+
+
+
+
 
