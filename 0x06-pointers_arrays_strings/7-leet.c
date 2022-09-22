@@ -1,31 +1,29 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * *cap_string - capitalize words
- * @str: string
+ * *leet - encode string to 1337
+ * @s: string
  *
  * Return: result
  */
 
-char *cap_string(char *str)
+char *leet(char *)
 {
-	int symb[14] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-	int i, j;
+	char *m = "aeotl";
+	char *M = "AEOTL";
+	int x[] = {'4', '3', '0', '7', '1'};
+	int i;
+	char *p = s;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while(*s != '\0')
 	{
-		if (str[0] >= 97 && str[0] <= 122)
+		for (i = 0; i < 5; i++)
 		{
-			str[0] = str[0] - 32;
+			if (*s == *(m + i) || *s == *(M + i))
+				*s = x[1];
 		}
-		for (j = 0; j < 14, j++)
-		{
-			if (str[i] >= 97 && str[i] <= 122 && str[i - 1] == symb[j])
-			{
-				str[1] = str[i] -32;
-			}
-		}
+		s++;
 	}
-	return (str);
+       
+	return (p);
 }
