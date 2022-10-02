@@ -5,7 +5,7 @@
  * @s: given string
  * @accept: source
  *
- * Return: no. of bytes in initial segmnt of s consisting only of bytes frm accept
+ * Return: no. of bytes in initial segmnt of s consisting of bytes frm accept
  */
 
 unsigned int _strspn(char *s, char *accept)
