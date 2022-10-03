@@ -11,18 +11,28 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j;
+	int i;
+	int tmp = 0;
 	int fwdsum = 0;
 	int bwdsum = 0;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size * size; i++)
 	{
-		fwdsum += *(a + i * sizeof(int));
+		if (i == 0)
+		{
+			bwdsum = bwdsum + *(a + 1);
+			tmp = i;
+		}
+		else if (i == (tmp + size + 1))
+		{
+			bwdsum = bwdsum + *(a + i);
+			tmp = i;
+		}
 	}
 
-	for (j = 0; j < size; j++)
+	for (i = 0; i < size; i++)
 	{
-		bwdsum += *(a + (size * j) + (size -j - 1));
+		fwdsum = fwdsum + *(a + (size * (i + 1) - (i + 1)));
 	}
 
 	printf("%d, %d\n", fwdsum, bwdsum);
