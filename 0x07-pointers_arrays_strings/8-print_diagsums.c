@@ -25,5 +25,5 @@ void print_diagsums(int *a, int size)
 		bwdsum += *(a + (size * j) + (size -j - 1));
 	}
 
-	printf("%d, %d\n", c, d);
+	printf("%d, %d\n", fwdsum, bwdsum);
 }
