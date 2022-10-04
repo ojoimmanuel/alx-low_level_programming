@@ -2,40 +2,32 @@
 
 
 /**
- * find_sqrt - finds square root
+ * find_prime - find prime
  * @n: integer
- * @x: number to try
+ * @i: divisor
  *
- * Return: root
+ * Return: integer
  */
 
-int find_sqrt(int n, int x)
+int find_prime(int n, int i = 2)
 {
-	if (x * x == n)
-		return (x);
-	else if (x > n / x)
-		return (find_sqrt(n, x - 1));
-	else if (x < n / x)
-		return (find_sqrt(n, x + 1));
+	if (n % i == 0)
+		return (0);
 	else
-		return (-1);
+		return (find_prime(n, i + 1));
 }
 
 /**
- * _sqrt_recursion - returns natural square root of a number
+ * is_prime_number - check if prime
  * @n: integer
  *
  * Return: interger
  */
-int _sqrt_recursion(int n)
-{
-	int x = 1;
 
-	if (n < 0)
-		return (-1);
-	else if (n == 0)
+int is_prime_number(int n)
+{
+	if (n <= 2)
 		return (1);
 	else
-		return (find_sqrt(n, x));
+		return (find_prime(n, i));
 }
-
