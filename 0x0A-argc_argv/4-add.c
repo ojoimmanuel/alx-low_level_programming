@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 /**
- *
- * * is_number - check if num
+ * is_number - check if num
  * @s: character to check
  *
  * Return: 1 if it's a number, 0 otherwise
