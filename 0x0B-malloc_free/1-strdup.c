@@ -10,14 +10,14 @@
 
 char *_strdup(char *str)
 {
-	int length, i;
+	int len, i;
 	char *array;
 
 	if (array == NULL)
 	{
 		return (NULL);
 	}
-	length = 0;
+	len = 0;
 	while (*(str + len) != '\0')
 	{
 		len++;
@@ -28,7 +28,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < len; i++)
 	{
 		array[i] = str[i];
 	}
