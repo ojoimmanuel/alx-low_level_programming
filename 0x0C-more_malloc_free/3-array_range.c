@@ -26,6 +26,6 @@ int *array_range(int min, int max)
 
 	for (num = min, i = 0; num <= max && i < diff; num++, i++)
 		p[i] = num;
-	
+
 	return (p);
 }
