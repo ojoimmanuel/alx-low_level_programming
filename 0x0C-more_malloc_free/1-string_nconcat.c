@@ -7,7 +7,7 @@
  *
  * Return: length
  */
-/*
+
 int _strlen(char *string)
 {
 	int len;
@@ -20,7 +20,7 @@ int _strlen(char *string)
 	
 	return (len);
 }
-*/
+
 
 /**
  * string_nconcat - concat two strings
@@ -42,6 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 
 	/* get lenth of string*/
+	/*
 	while (s1[len1] != '\0')
 	{
 		len1++;
@@ -51,6 +52,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		len2++;
 	}
+	*/
+
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
 
 	/*determine size of concat pointer mmry space*/
 	if (n >= len2)
