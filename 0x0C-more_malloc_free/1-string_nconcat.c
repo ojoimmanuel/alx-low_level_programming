@@ -20,6 +20,7 @@ int _strlen(char *string)
 	
 	return (len);
 }
+*/
 
 /**
  * string_nconcat - concat two strings
