@@ -13,7 +13,7 @@ char *mmry_alloc(char *str)
 {
 	int len, i;
 	char *arr;
-	
+
 	if (str == NULL)
 	{
 		return (NULL);
