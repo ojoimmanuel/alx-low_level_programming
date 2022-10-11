@@ -13,7 +13,7 @@ char *mmry_alloc(char *str)
 {
 	int len, i;
 	char *arr;
-		
+	
 	if (str == NULL)
 	{
 		return (NULL);
@@ -23,7 +23,7 @@ char *mmry_alloc(char *str)
 	{
 		len++;
 	}
-	arr = (char*) malloc(len * sizeof(char) + 1);
+	arr = (char *) malloc(len * sizeof(char) + 1);
 	if (arr == NULL)
 		return (NULL);
 	for (i = 0; i < len; i++)
