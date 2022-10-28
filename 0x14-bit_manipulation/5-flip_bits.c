@@ -4,7 +4,6 @@
  * flip_bits - return the number of bit to flip to get another
  * @n: integer 1
  * @m: integer 2
- * @index: index
  *
  * Return: number of bit to flip
  */
