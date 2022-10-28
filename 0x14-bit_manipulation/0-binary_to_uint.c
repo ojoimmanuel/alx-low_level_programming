@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+ * _strlen - get length of string
+ * @s: string
+ *
+ * Return: int length
+ */
+
+int _strlen(const char *s)
+{
+	int len = 0;
+
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+
+	return (len);
+}
+
+/**
  * power - calculate power
  * @num: given number
  * @exp: exponential
@@ -31,15 +50,10 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int sum;
 	int len, i;
 
-	len = 0;
 	sum = 0;
 	if (b == NULL)
 		return (0);
-	while (b[len] != '\0')
-	{
-		len++;
-	}
-
+	len = _strlen(b);
 	for (i = len - 1; i >= 0; i--)
 	{
 		if (b[i] != '0' && b[i] != '1')
