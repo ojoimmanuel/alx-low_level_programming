@@ -14,7 +14,7 @@ int pow(int num, int exp)
 
 	result = 1;
 	for (i = 0; i < exp; ++i)
-		num *= base;
+		result *= num;
 
 	return (result);
 }
