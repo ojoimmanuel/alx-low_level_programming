@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * pow - calculate power
+ * power - calculate power
  * @num: given number
  * @exp: exponential
  *
  * Return: result
  */
 
-int pow(int num, int exp)
+int power(int num, int exp)
 {
 	int i, result;
 
@@ -44,7 +44,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		sum += (b[i] - '0' * pow(2, len - i - 1);
+		sum += (b[i] - '0' * power(i, len - i - 1);
 	}
 	return (sum);
 
