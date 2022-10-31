@@ -20,14 +20,14 @@ int _strlen(char *s)
 }
 
 /**
- * create_file - fxn to create a file
+ * append_text_to_file - fxn to append text to end of file
  * @filename: name of file
  * @text_content: text
  *
- * Return: 1 if success, 0 otherwise
+ * Return: 1 if success, -1 on error
  */
 
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
 	unsigned int length;
@@ -36,18 +36,13 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
+	if (text_content == NULL)
+		return (1);
 
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	fd = open(filename, O_WRONLY | O_APPEND);
 	if (fd == -1)
 		return (-1);
-
-	if (text_content == NULL)
-	{
-		length = 0;
-		text_content = "";
-	}
-	else
-		length = _strlen(text_content);
+	length = _strlen(text_content);
 
 	bytes_written = write(fd, text_content, length);
 	if (bytes_written == -1)
