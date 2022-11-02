@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 		error_handler(98, "Error: Can't read from file %s\n", 's', argv[1]);
 
 	fd_dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (fd == -1)
+	if (fd_dest == -1)
 		error_handler(99, "Error: Can't write to %s\n", 's', argv[2]);
 
 	while ((bytes_read = read(fd_src, buf, 1024)) > 0)
