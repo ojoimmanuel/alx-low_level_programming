@@ -8,7 +8,7 @@
  * Return: number of letters if success, 0 otherwise
  */
 
-ssize_t read_textfile(const char *filename, sixe_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	char *buf;
