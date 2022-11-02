@@ -33,7 +33,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buf[letters + 1] = '\0';
 	close(fd);
 
-	bytes_written = write(STDOUT_FILEN), buf, bytes_read);
+	bytes_written = write(STDOUT_FILENO, buf, bytes_read);
 	if (bytes_written == -1)
 		return (0);
 
